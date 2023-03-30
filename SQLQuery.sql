@@ -22,6 +22,18 @@ EXEC sp_rename 'IBGE.column13', 'RendimentoMensalDomiciliar_PerCapita_2022', 'CO
 EXEC sp_rename 'IBGE.column14', 'TotalVeículos_2022', 'COLUMN';
 
 
+-- Consultando nomes das colunas:
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'IBGE';
+
+SELECT STUFF((SELECT ',' + COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'IBGE'
+FOR XML PATH('')), 1, 1, '') AS Nomes_das_Colunas;
+-- UF,Código,Gentílico,Governador_2023,Capital_2010,ÁreaTerritorial_2022,PopulaçãoEstimada_2021,DensidadeDemográfica_2010,Matrículas_EnsinoFundamental,IDH_2010,ReceitasRealizadas_2017,Despesas Empenhadas_2017,RendimentoMensalDomiciliar_PerCapita_2022,TotalVeículos_2022
+
+
 -- Retirando a primeira linha com nomes das colunas:
 DELETE FROM 
 	IBGE 

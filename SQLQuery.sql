@@ -17,7 +17,7 @@ EXEC sp_rename 'IBGE.column8', 'DensidadeDemográfica_2010', 'COLUMN';
 EXEC sp_rename 'IBGE.column9', 'Matrículas_EnsinoFundamental', 'COLUMN';
 EXEC sp_rename 'IBGE.column10', 'IDH_2010', 'COLUMN';
 EXEC sp_rename 'IBGE.column11', 'ReceitasRealizadas_2017', 'COLUMN';
-EXEC sp_rename 'IBGE.column12', 'Despesas Empenhadas_2017', 'COLUMN';
+EXEC sp_rename 'IBGE.column12', 'DespesasEmpenhadas_2017', 'COLUMN';
 EXEC sp_rename 'IBGE.column13', 'RendimentoMensalDomiciliar_PerCapita_2022', 'COLUMN';
 EXEC sp_rename 'IBGE.column14', 'TotalVeículos_2022', 'COLUMN';
 
@@ -32,13 +32,6 @@ FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'IBGE'
 FOR XML PATH('')), 1, 1, '') AS Nomes_das_Colunas;
 -- UF,Código,Gentílico,Governador_2023,Capital_2010,ÁreaTerritorial_2022,PopulaçãoEstimada_2021,DensidadeDemográfica_2010,Matrículas_EnsinoFundamental,IDH_2010,ReceitasRealizadas_2017,Despesas Empenhadas_2017,RendimentoMensalDomiciliar_PerCapita_2022,TotalVeículos_2022
-
-
--- Retirando a primeira linha com nomes das colunas:
-DELETE FROM 
-	IBGE 
-WHERE 
-	UF = (SELECT TOP 1 UF FROM IBGE ORDER BY UF DESC);
 
 
 	-- Retirando a primeira linha com notas dos dados:

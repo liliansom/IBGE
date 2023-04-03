@@ -4,12 +4,12 @@ O IBGE é o principal fornecedor de informações e dados no Brasil, atendendo �
 
 A história do IBGE remonta à época imperial, quando a Diretoria Geral de Estatística foi criada em 1871. Com o passar do tempo, o órgão responsável pelas estatísticas no Brasil mudou de nome e funções várias vezes até a criação do Instituto Nacional de Estatística (INE) em 1934. O INE deu origem ao atual IBGE, que desde então tem a missão de identificar e analisar o território, contar a população, mostrar a evolução da economia, revelando como as pessoas vivem.
 
-Neste projeto será realizada a análise e o tratamento de dados retirados do site do IBGE. Os dados serão apresentados com gráficos e tabelas e poderão ser visualizados no arquivo Analise.ipynb.
+Neste projeto serão realizados a análise e o tratamento de dados retirados do site do IBGE. Os dados serão apresentados com gráficos e tabelas e poderão ser visualizados no arquivo Analise.ipynb.
 
 ## Informações
 Para realizar este projeto de análise e tratamento de dados foram utilizadas as ferramentas: SQL e Python.<br>
 O SQL Server será utilizado para importar os dados, visualiza-los e trata-los. <br>
-O Python foi utilizado para realizar uma análise mais aprofundada desses dados.<br>
+O Python será utilizado para realizar uma análise mais aprofundada desses dados.<br>
 
 Desenvolvido com:<br>
 <li>Dados IBGE: Retirados do site do IBGE, https://www.ibge.gov.br/cidades-e-estados</li>
@@ -34,7 +34,7 @@ Os dados estão disponíveis na pasta 'data' neste repositório, sendo:
     <li> Dados retirados do site: IBGE.csv</li>
     <li> Dados após tratamento: IBGE_TRATADO.csv</li>
     <li> Arquivo de tratamento no SQL Server: SQLQuery.sql</li>
-    <li>Apresentação dos dados: Analise.ipynb</li>
+    <li> Apresentação dos dados: Analise.ipynb</li>
     
     
 No prompt do Anaconda, realizar o download das bibliotecas Pandas, Matplotlib e Seaborn.<br>
@@ -53,5 +53,5 @@ Você só precisará clicar no link abaixo e clicar em "Ambiente de execução" 
 <a class="nav-link" href="" target="_blank">Clique aqui para acessar o arquivo!</a><br>
 
 # Andamento do projeto:
-Em Andamento.
+Em Andamento.<br>
 Data de Entrega: 05/04/23<br>

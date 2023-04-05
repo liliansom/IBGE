@@ -44,14 +44,5 @@ Alterar o nome do caminho dos arquivos na segunda linha na etapa de importação
 Apertar em 'RUN'.<br>
 Após este passo, o programa irá rodar todos as tabelas e gráficos disponíveis.<br>
 
-
-2) Google Colab<br>
-
-Caso não deseje clonar todo esse repositório, também será disponibilizado um arquivo no Google Colab.<br>
-Você só precisará clicar no link abaixo e clicar em "Ambiente de execução" e, em seguida, "Executar tudo".<br>
-
-<a class="nav-link" href="" target="_blank">Clique aqui para acessar o arquivo!</a><br>
-
 # Andamento do projeto:
-Em Andamento.<br>
-Data de Entrega: 05/04/23<br>
+Entregue.
